@@ -10,6 +10,7 @@ $fw-sections: 700;
 $fw-title: 900;
 $pd-sections: 11rem;
 $pd-numbers: 4rem;
+$fs-numbers: 40px;
 
 *{
     padding: 0px;
@@ -253,6 +254,20 @@ footer{
     }
 }
 
+/*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
+
+.rutinas{
+    text-align: center;
+    }
+
+    .col{
+        border: 2px;
+        border-color: blue;        
+    
+    }
+
+
+
 /*--------------------------------------------------------DERMATOS--------------------------------------------------------*/
 
 /*----------------MAIN----------------*/
@@ -260,7 +275,7 @@ footer{
 main{
     text-align: center;
     font-family: $ff-sections;
-    background-image: linear-gradient(white, rgba(253, 201, 221, 0.486), white);
+    background-image: linear-gradient(white, rgba(133, 60, 125, 0.354), white);
 
     .introduction{
         padding: 30px;
@@ -353,11 +368,11 @@ main{
     align-items: center;
     justify-content: space-evenly;
     font-family: $ff-sections;
-    font-size: 20px;
+    font-size: $fs-numbers/2;
 
     .conteiner__numbers--font{
         font-family: 'Zen Old Mincho', serif;
-        font-size: 80px;
+        font-size: $fs-numbers*2;
     }
     .conteiner__año{
         padding: $pd-numbers;

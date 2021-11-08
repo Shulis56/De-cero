@@ -266,13 +266,23 @@ footer .redes-pagos {
   text-align: center;
 }
 
+/*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
+.rutinas {
+  text-align: center;
+}
+
+.col {
+  border: 2px;
+  border-color: blue;
+}
+
 /*--------------------------------------------------------DERMATOS--------------------------------------------------------*/
 /*----------------MAIN----------------*/
 main {
   text-align: center;
   font-family: "Lato", sans-serif;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(253, 201, 221, 0.486)), to(white));
-  background-image: linear-gradient(white, rgba(253, 201, 221, 0.486), white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(133, 60, 125, 0.354)), to(white));
+  background-image: linear-gradient(white, rgba(133, 60, 125, 0.354), white);
 }
 
 main .introduction {
