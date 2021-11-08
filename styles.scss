@@ -67,6 +67,31 @@ header{
     }
 }
 
+#headerProductos{
+    background-image: url(img/header2.png);
+    background-repeat: no-repeat;
+    padding: $pd-header;
+}
+
+#headerRutinas{
+    background-image: url(img/header3.png);
+    background-repeat: no-repeat;
+    padding: $pd-header
+}
+#headerDermatos{
+    background-image: url(img/header4.png);
+    background-repeat: no-repeat;
+    padding: $pd-header;
+}
+
+#headerAyuda{
+    background-image: url(img/header5.png);
+    background-repeat: no-repeat;
+    padding: $pd-header;
+}
+
+
+
 /*----------------SECTION 1----------------*/
 
 .section1{
@@ -235,8 +260,7 @@ footer{
 main{
     text-align: center;
     font-family: $ff-sections;
-    background-color: rgb(232, 255, 197);
-
+    background-image: linear-gradient(white, rgba(253, 201, 221, 0.486), white);
 
     .introduction{
         padding: 30px;
@@ -244,10 +268,12 @@ main{
             .dermatos__text--title{
                 font-family: $ff-sections;
                 font-weight: $fw-sections;
+                padding: 2rem;
                 font-size: 35px;
             }
             .dermatos__text--p{
-                font-size: 15px;
+                font-size: 20px;
+                padding: 2rem;
 
             }
         }

@@ -65,6 +65,30 @@ header nav .linav a:link {
   text-decoration: none;
 }
 
+#headerProductos {
+  background-image: url(img/header2.png);
+  background-repeat: no-repeat;
+  padding: 2em 2em 600px 2em;
+}
+
+#headerRutinas {
+  background-image: url(img/header3.png);
+  background-repeat: no-repeat;
+  padding: 2em 2em 600px 2em;
+}
+
+#headerDermatos {
+  background-image: url(img/header4.png);
+  background-repeat: no-repeat;
+  padding: 2em 2em 600px 2em;
+}
+
+#headerAyuda {
+  background-image: url(img/header5.png);
+  background-repeat: no-repeat;
+  padding: 2em 2em 600px 2em;
+}
+
 /*----------------SECTION 1----------------*/
 .section1 {
   background-color: white;
@@ -247,7 +271,8 @@ footer .redes-pagos {
 main {
   text-align: center;
   font-family: "Lato", sans-serif;
-  background-color: #e8ffc5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(253, 201, 221, 0.486)), to(white));
+  background-image: linear-gradient(white, rgba(253, 201, 221, 0.486), white);
 }
 
 main .introduction {
@@ -257,11 +282,13 @@ main .introduction {
 main .introduction .dermatos__text--title {
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  padding: 2rem;
   font-size: 35px;
 }
 
 main .introduction .dermatos__text--p {
-  font-size: 15px;
+  font-size: 20px;
+  padding: 2rem;
 }
 
 main .intr-img {
