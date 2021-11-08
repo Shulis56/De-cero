@@ -1,0 +1,374 @@
+/*----------------VARIABLES----------------*/
+$bc-sections: rgb(255, 246, 251);
+$bc-rutinas: rgb(197, 196, 196);
+$bc-nav: rgba(255, 255, 255, 0.794);
+$pd-header: 2em 2em 600px 2em;
+$pd-linav: 1em 3em 1em 3em;
+$ff-nav: 'Questrial', sans-serif;
+$ff-sections: 'Lato', sans-serif;
+$fw-sections: 700;
+$fw-title: 900;
+$pd-sections: 11rem;
+$pd-numbers: 4rem;
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+ul{
+    list-style: none;
+}
+
+/*----------------NAVEGADOR----------------*/
+
+header{
+    background-image: url(img/header.png);
+    background-repeat: no-repeat;
+    padding: $pd-header;
+
+    nav{
+        background-color: $bc-nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1%;
+        border-radius: 15px;
+        font-family: $ff-nav;
+
+        .linav{
+            display: inline;
+            padding: $pd-linav;
+            font-size: 23px;
+
+            a:visited{
+                color: black;
+                outline: none;
+                text-decoration: none;
+            }
+            a:link{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*----------------SECTION 1----------------*/
+
+.section1{
+    background-color: rgb(255, 255, 255);
+    max-height: 30rem;
+    padding-bottom: 35rem;
+    display: flex;
+    justify-content: flex-start;
+
+    .section1__text{
+    padding: 3rem 4rem 1rem 5rem;
+    max-width: 28rem;
+    font-family: $ff-sections;
+    font-weight: $fw-sections;
+    font-size: larger;
+
+        .section1__text--title{
+            font-weight: $fw-title;
+        }
+
+        .section1__linkbutton{
+        background-color: #000000;
+        color: white;
+        padding: 0.5rem 3.5rem;
+        margin-top: 2rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 30px;
+        }
+
+        .section1__linkbutton:hover{
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+        }
+    }
+
+    .section1__carousel{
+        padding: 1rem;
+        padding-left: 12rem;
+        max-width: 53rem;
+    }
+}
+
+/*----------------SECTION 2----------------*/
+
+.section2{
+    background-color: $bc-sections;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .section2__text{
+        font-family: $ff-sections;
+        font-weight: $fw-sections;
+        font-size: larger;
+        max-width: 35rem;
+
+
+            .section2__text--title{
+                font-weight: $fw-title;
+                padding-bottom: 2rem;
+            }
+
+        .section2__linkbutton{
+            background-color: #000000;
+            color: white;
+            padding: 0.5rem 3.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 30px;
+            }
+    
+            .section2__linkbutton:hover{
+                background-color: rgb(255, 255, 255);
+                color: #000000;
+            }
+        }
+}
+
+/*----------------SECTION 3----------------*/
+
+.section3{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 35px;
+
+    .section3__text{
+        font-family: $ff-sections;
+        font-weight: $fw-sections;
+        font-size: larger;
+        text-align: right;
+        max-width: 320px;
+
+        .section3__text--title{
+            font-weight: $fw-title;
+        }
+
+        .section3__linkbutton{
+            background-color: #000000;
+            color: white;
+            padding: 0.5rem 3.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 30px;
+        }
+    
+            .section3__linkbutton:hover{
+                background-color: rgb(255, 255, 255);
+                color: #000000;
+        }
+    }
+}
+
+/*----------------FOOTER----------------*/
+
+footer{
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    background: cover;
+    background-color: rgb(255, 255, 255);
+    padding: 15rem 5rem 1rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .encontranos{
+        text-align: center;
+        line-height: 3.4;
+
+        .encontranos__p1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            display: inline;
+        }
+        .encontranos__p2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+    }
+
+    .ayuda{
+        text-align: center;
+        .ulfooter{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        line-height: 3;
+        }
+    }
+
+    .redes-pagos{
+        text-align: center;
+    }
+}
+
+/*--------------------------------------------------------DERMATOS--------------------------------------------------------*/
+
+/*----------------MAIN----------------*/
+
+main{
+    text-align: center;
+    font-family: $ff-sections;
+    background-color: rgb(232, 255, 197);
+
+
+    .introduction{
+        padding: 30px;
+
+            .dermatos__text--title{
+                font-family: $ff-sections;
+                font-weight: $fw-sections;
+                font-size: 35px;
+            }
+            .dermatos__text--p{
+                font-size: 15px;
+
+            }
+        }
+
+        .intr-img{
+            display: flex;
+            align-items: center;
+
+
+            .conteiner__overlay{
+                position: relative;
+                padding: 20px;
+            }
+            
+            .img__overlay{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .overlay{
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff88;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .6s ease;
+            }
+            
+            .conteiner__overlay:hover .overlay{
+                bottom: 0;
+                height: 100%;
+            }
+            
+            .conteiner__overlay--text{
+                white-space: nowrap; 
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                font-family: $fw-sections;
+                font-weight: $fw-title;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+/*----------------SECTOR 1----------------*/
+
+
+.conteiner__aboutus{
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 10rem 1rem 10rem;
+
+    .conteiner__aboutus--font{
+        font-weight: 900;
+        font-family: 'Zen Old Mincho', serif;
+        font-size: xx-large;
+        padding-top: 1rem;     
+    }
+
+    .conteiner__aboutus--text{
+        padding: 1rem 10rem 0rem 10rem;
+    }
+}
+
+.conteiner__numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: $ff-sections;
+    font-size: 20px;
+
+    .conteiner__numbers--font{
+        font-family: 'Zen Old Mincho', serif;
+        font-size: 80px;
+    }
+    .conteiner__año{
+        padding: $pd-numbers;
+        text-align: center;
+    }
+    .conteiner__productos{
+        padding: $pd-numbers;
+        text-align: center;
+    }
+    .conteiner__empleados{
+        padding: $pd-numbers;
+        text-align: center;
+    }
+}
+
+
+
+/*--------------------------------------------------------AYUDA--------------------------------------------------------*/
+
+.formulario{
+    padding: 40px 40px 40px 40px;
+
+    .mb-3-mt-3{
+        padding-bottom: 30px;
+    }
+
+    .form-floating{
+        padding-bottom: 2rem;
+    }
+
+    .btn-primary{
+        background-color: rgb(197, 120, 187);
+        border-color: rgb(197, 120, 187);
+    }
+    
+    #comment.form-control{
+        padding-bottom: 12rem;
+    }
+}
+

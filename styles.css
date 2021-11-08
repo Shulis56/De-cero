@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/*----------------VARIABLES----------------*/
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+/*----------------NAVEGADOR----------------*/
+header {
+  background-image: url(img/header.png);
+  background-repeat: no-repeat;
+  padding: 2em 2em 600px 2em;
+}
+
+header nav {
+  background-color: rgba(255, 255, 255, 0.794);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+  border-radius: 15px;
+  font-family: "Questrial", sans-serif;
+}
+
+header nav .linav {
+  display: inline;
+  padding: 1em 3em 1em 3em;
+  font-size: 23px;
+}
+
+header nav .linav a:visited {
+  color: black;
+  outline: none;
+  text-decoration: none;
+}
+
+header nav .linav a:link {
+  text-decoration: none;
+}
+
+/*----------------SECTION 1----------------*/
+.section1 {
+  background-color: white;
+  max-height: 30rem;
+  padding-bottom: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section1 .section1__text {
+  padding: 3rem 4rem 1rem 5rem;
+  max-width: 28rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.section1 .section1__text .section1__text--title {
+  font-weight: 900;
+}
+
+.section1 .section1__text .section1__linkbutton {
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.section1 .section1__text .section1__linkbutton:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.section1 .section1__carousel {
+  padding: 1rem;
+  padding-left: 12rem;
+  max-width: 53rem;
+}
+
+/*----------------SECTION 2----------------*/
+.section2 {
+  background-color: #fff6fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 .section2__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  max-width: 35rem;
+}
+
+.section2 .section2__text .section2__text--title {
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+
+.section2 .section2__text .section2__linkbutton {
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.section2 .section2__text .section2__linkbutton:hover {
+  background-color: white;
+  color: #000000;
+}
+
+/*----------------SECTION 3----------------*/
+.section3 {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+}
+
+.section3 .section3__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  text-align: right;
+  max-width: 320px;
+}
+
+.section3 .section3__text .section3__text--title {
+  font-weight: 900;
+}
+
+.section3 .section3__text .section3__linkbutton {
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.section3 .section3__text .section3__linkbutton:hover {
+  background-color: white;
+  color: #000000;
+}
+
+/*----------------FOOTER----------------*/
+footer {
+  background-image: url(img/footer.png);
+  background-repeat: no-repeat;
+  background: cover;
+  background-color: white;
+  padding: 15rem 5rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .encontranos {
+  text-align: center;
+  line-height: 3.4;
+}
+
+footer .encontranos .encontranos__p1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display: inline;
+}
+
+footer .encontranos .encontranos__p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+footer .ayuda {
+  text-align: center;
+}
+
+footer .ayuda .ulfooter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  line-height: 3;
+}
+
+footer .redes-pagos {
+  text-align: center;
+}
+
+/*--------------------------------------------------------DERMATOS--------------------------------------------------------*/
+/*----------------MAIN----------------*/
+main {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: #e8ffc5;
+}
+
+main .introduction {
+  padding: 30px;
+}
+
+main .introduction .dermatos__text--title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+main .introduction .dermatos__text--p {
+  font-size: 15px;
+}
+
+main .intr-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .intr-img .conteiner__overlay {
+  position: relative;
+  padding: 20px;
+}
+
+main .intr-img .img__overlay {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+main .intr-img .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff88;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+main .intr-img .conteiner__overlay:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+main .intr-img .conteiner__overlay--text {
+  white-space: nowrap;
+  color: black;
+  font-size: 15px;
+  font-family: 700;
+  font-weight: 900;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*----------------SECTOR 1----------------*/
+.conteiner__aboutus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10rem 10rem 1rem 10rem;
+}
+
+.conteiner__aboutus .conteiner__aboutus--font {
+  font-weight: 900;
+  font-family: 'Zen Old Mincho', serif;
+  font-size: xx-large;
+  padding-top: 1rem;
+}
+
+.conteiner__aboutus .conteiner__aboutus--text {
+  padding: 1rem 10rem 0rem 10rem;
+}
+
+.conteiner__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.conteiner__numbers .conteiner__numbers--font {
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 80px;
+}
+
+.conteiner__numbers .conteiner__año {
+  padding: 4rem;
+  text-align: center;
+}
+
+.conteiner__numbers .conteiner__productos {
+  padding: 4rem;
+  text-align: center;
+}
+
+.conteiner__numbers .conteiner__empleados {
+  padding: 4rem;
+  text-align: center;
+}
+
+/*--------------------------------------------------------AYUDA--------------------------------------------------------*/
+.formulario {
+  padding: 40px 40px 40px 40px;
+}
+
+.formulario .mb-3-mt-3 {
+  padding-bottom: 30px;
+}
+
+.formulario .form-floating {
+  padding-bottom: 2rem;
+}
+
+.formulario .btn-primary {
+  background-color: #c578bb;
+  border-color: #c578bb;
+}
+
+.formulario #comment.form-control {
+  padding-bottom: 12rem;
+}
+/*# sourceMappingURL=styles.css.map */
