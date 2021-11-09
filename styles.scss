@@ -11,6 +11,7 @@ $fw-title: 900;
 $pd-sections: 11rem;
 $pd-numbers: 4rem;
 $fs-numbers: 40px;
+$pd-rutinas: 2rem 4rem 2rem 4rem;
 
 *{
     padding: 0px;
@@ -257,14 +258,30 @@ footer{
 /*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
 
 .rutinas{
-    text-align: center;
+    justify-content: space-around;
+
+    .encabezado{
+        padding: $pd-rutinas;
+        text-align: center;
+    }
+    .piel-grasa{
+        padding: $pd-rutinas;
+        display: flex;
+        flex-direction: row;
+    }
+    .piel-seca{
+        padding: $pd-rutinas;
+        display: flex;
+        flex-direction: row;
+    }
+    .piel-mixta{
+        padding: $pd-rutinas;
+        display: flex;
+        flex-direction: row;
     }
 
-    .col{
-        border: 2px;
-        border-color: blue;        
-    
-    }
+
+}
 
 
 

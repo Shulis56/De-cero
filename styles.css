@@ -268,12 +268,46 @@ footer .redes-pagos {
 
 /*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
 .rutinas {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rutinas .encabezado {
+  padding: 2rem 4rem 2rem 4rem;
   text-align: center;
 }
 
-.col {
-  border: 2px;
-  border-color: blue;
+.rutinas .piel-grasa {
+  padding: 2rem 4rem 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rutinas .piel-seca {
+  padding: 2rem 4rem 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rutinas .piel-mixta {
+  padding: 2rem 4rem 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /*--------------------------------------------------------DERMATOS--------------------------------------------------------*/
