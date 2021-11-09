@@ -1,6 +1,6 @@
 /*----------------VARIABLES----------------*/
 $bc-sections: rgb(255, 246, 251);
-$bc-rutinas: rgb(197, 196, 196);
+$bc-rutinas: rgb(255, 248, 241);
 $bc-nav: rgba(255, 255, 255, 0.794);
 $pd-header: 2em 2em 600px 2em;
 $pd-linav: 1em 3em 1em 3em;
@@ -11,7 +11,7 @@ $fw-title: 900;
 $pd-sections: 11rem;
 $pd-numbers: 4rem;
 $fs-numbers: 40px;
-$pd-rutinas: 2rem 4rem 2rem 4rem;
+$pd-rutinas: 2rem 3rem 2rem 3rem;
 
 *{
     padding: 0px;
@@ -30,9 +30,6 @@ a:link{
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-}
-ul{
-    list-style: none;
 }
 
 /*----------------NAVEGADOR----------------*/
@@ -214,51 +211,13 @@ header{
     }
 }
 
-/*----------------FOOTER----------------*/
 
-footer{
-    background-image: url(img/footer.png);
-    background-repeat: no-repeat;
-    background: cover;
-    background-color: rgb(255, 255, 255);
-    padding: 15rem 5rem 1rem 1rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    .encontranos{
-        text-align: center;
-        line-height: 3.4;
-
-        .encontranos__p1{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: x-large;
-            display: inline;
-        }
-        .encontranos__p2{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: x-large;
-        }
-    }
-
-    .ayuda{
-        text-align: center;
-        .ulfooter{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: x-large;
-        line-height: 3;
-        }
-    }
-
-    .redes-pagos{
-        text-align: center;
-    }
-}
 
 /*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
 
 .rutinas{
     justify-content: space-around;
+    padding: 1rem 8rem 1rem 8rem;
 
     .encabezado{
         padding: $pd-rutinas;
@@ -266,21 +225,34 @@ footer{
     }
     .piel-grasa{
         padding: $pd-rutinas;
+        margin-bottom: 3rem;
         display: flex;
         flex-direction: row;
+        background-color: $bc-rutinas;
+        .piel-grasa__text{
+            padding: 3rem;
+        }
     }
     .piel-seca{
         padding: $pd-rutinas;
+        margin-bottom: 3rem;
         display: flex;
         flex-direction: row;
+        background-color: $bc-rutinas;
+        .piel-seca__text{
+            padding: 3rem;
+        }
     }
     .piel-mixta{
         padding: $pd-rutinas;
+        margin-bottom: 3rem;
         display: flex;
         flex-direction: row;
+        background-color: $bc-rutinas;
+        .piel-mixta__text{
+            padding: 3rem;
+        }
     }
-
-
 }
 
 
@@ -430,3 +402,44 @@ main{
     }
 }
 
+/*----------------FOOTER----------------*/
+
+footer{
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    background: cover;
+    background-color: rgb(255, 255, 255);
+    padding: 15rem 5rem 1rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .encontranos{
+        text-align: center;
+        line-height: 3.4;
+
+        .encontranos__p1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            display: inline;
+        }
+        .encontranos__p2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+    }
+
+    .ayuda{
+        text-align: center;
+        .ulfooter{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        line-height: 3;
+        list-style: none;
+        }
+    }
+
+    .redes-pagos{
+        text-align: center;
+    }
+}

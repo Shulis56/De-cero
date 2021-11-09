@@ -19,10 +19,6 @@ a {
   color: black;
 }
 
-ul {
-  list-style: none;
-}
-
 /*----------------NAVEGADOR----------------*/
 header {
   background-image: url(img/header.png);
@@ -219,66 +215,21 @@ header nav .linav a:link {
   color: #000000;
 }
 
-/*----------------FOOTER----------------*/
-footer {
-  background-image: url(img/footer.png);
-  background-repeat: no-repeat;
-  background: cover;
-  background-color: white;
-  padding: 15rem 5rem 1rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-footer .encontranos {
-  text-align: center;
-  line-height: 3.4;
-}
-
-footer .encontranos .encontranos__p1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-large;
-  display: inline;
-}
-
-footer .encontranos .encontranos__p2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-large;
-}
-
-footer .ayuda {
-  text-align: center;
-}
-
-footer .ayuda .ulfooter {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-large;
-  line-height: 3;
-}
-
-footer .redes-pagos {
-  text-align: center;
-}
-
 /*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
 .rutinas {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 1rem 8rem 1rem 8rem;
 }
 
 .rutinas .encabezado {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 3rem 2rem 3rem;
   text-align: center;
 }
 
 .rutinas .piel-grasa {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 3rem 2rem 3rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,10 +237,16 @@ footer .redes-pagos {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #fff8f1;
+}
+
+.rutinas .piel-grasa .piel-grasa__text {
+  padding: 3rem;
 }
 
 .rutinas .piel-seca {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 3rem 2rem 3rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,10 +254,16 @@ footer .redes-pagos {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #fff8f1;
+}
+
+.rutinas .piel-seca .piel-seca__text {
+  padding: 3rem;
 }
 
 .rutinas .piel-mixta {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 3rem 2rem 3rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,6 +271,11 @@ footer .redes-pagos {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #fff8f1;
+}
+
+.rutinas .piel-mixta .piel-mixta__text {
+  padding: 3rem;
 }
 
 /*--------------------------------------------------------DERMATOS--------------------------------------------------------*/
@@ -469,5 +437,53 @@ main .intr-img .conteiner__overlay--text {
 
 .formulario #comment.form-control {
   padding-bottom: 12rem;
+}
+
+/*----------------FOOTER----------------*/
+footer {
+  background-image: url(img/footer.png);
+  background-repeat: no-repeat;
+  background: cover;
+  background-color: white;
+  padding: 15rem 5rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .encontranos {
+  text-align: center;
+  line-height: 3.4;
+}
+
+footer .encontranos .encontranos__p1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display: inline;
+}
+
+footer .encontranos .encontranos__p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+footer .ayuda {
+  text-align: center;
+}
+
+footer .ayuda .ulfooter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  line-height: 3;
+  list-style: none;
+}
+
+footer .redes-pagos {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
