@@ -20,11 +20,11 @@ $pd-rutinas: 2rem 3rem 2rem 3rem;
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: none;
 }
 
 a:link{
-    text-decoration: none;
+    text-decoration: white;
 }
 
 a{
@@ -211,6 +211,31 @@ header{
     }
 }
 
+/*--------------------------------------------------------PRODUCTOS--------------------------------------------------------*/
+
+.aside-filtros{
+    padding: 2rem 2rem 70rem 2rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    border-width: 1px;
+
+    .categorias{
+        display: block;
+
+        .enc_categorias{
+            padding-bottom: 10px;
+            font-size: larger;
+            font-family: $ff-sections;
+            font-weight: 900;
+        }
+        .categorias__checkboxs{
+            padding-bottom: 15px;
+            font-size: medium;
+        }
+    }
+}
 
 
 /*--------------------------------------------------------RUTINAS--------------------------------------------------------*/

@@ -7,11 +7,12 @@
 }
 
 body {
-  background-color: white;
+  background-color: none;
 }
 
 a:link {
-  text-decoration: none;
+  -webkit-text-decoration: white;
+          text-decoration: white;
 }
 
 a {
@@ -213,6 +214,32 @@ header nav .linav a:link {
 .section3 .section3__text .section3__linkbutton:hover {
   background-color: white;
   color: #000000;
+}
+
+/*--------------------------------------------------------PRODUCTOS--------------------------------------------------------*/
+.aside-filtros {
+  padding: 2rem 2rem 70rem 2rem;
+  margin-left: 3rem;
+  margin-top: 6rem;
+  border-style: solid;
+  border-color: #bebebe;
+  border-width: 1px;
+}
+
+.aside-filtros .categorias {
+  display: block;
+}
+
+.aside-filtros .categorias .enc_categorias {
+  padding-bottom: 10px;
+  font-size: larger;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+.aside-filtros .categorias .categorias__checkboxs {
+  padding-bottom: 15px;
+  font-size: medium;
 }
 
 /*--------------------------------------------------------RUTINAS--------------------------------------------------------*/
