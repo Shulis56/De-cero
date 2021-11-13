@@ -91,63 +91,82 @@ header{
 
 
 
-/*----------------SECTION 1----------------*/
+/*--------------------------------------------------------INDEX--------------------------------------------------------*/
 
-.section1{
-    background-color: rgb(255, 255, 255);
-    max-height: 30rem;
-    padding-bottom: 35rem;
-    display: flex;
-    justify-content: flex-start;
+#conteiner-index-grid{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: 30rem 30rem 30rem;
+    grid-gap: 1rem;
+    grid-template-areas:"section1 section1" 
+                        "section2 section2" 
+                        "section3 section3";
 
-    .section1__text{
-    padding: 3rem 4rem 1rem 5rem;
-    max-width: 28rem;
-    font-family: $ff-sections;
-    font-weight: $fw-sections;
-    font-size: larger;
+    /*----------------SECTION 1----------------*/
 
-        .section1__text--title{
-            font-weight: $fw-title;
-        }
+    #section1{
+        grid-area: section1;
+        background-color: rgb(255, 255, 255);
+        max-height: 30rem;
+        padding-bottom: 20rem;
+        display: flex;
+        justify-content: space-evenly;
 
-        .section1__linkbutton{
-        background-color: #000000;
-        color: white;
-        padding: 0.5rem 3.5rem;
-        margin-top: 2rem;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 30px;
-        }
-
-        .section1__linkbutton:hover{
-            background-color: rgb(255, 255, 255);
-            color: #000000;
-        }
-    }
-
-    .section1__carousel{
-        padding: 1rem;
-        padding-left: 12rem;
-        max-width: 53rem;
-    }
-}
-
-/*----------------SECTION 2----------------*/
-
-.section2{
-    background-color: $bc-sections;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .section2__text{
+        .section1__text{
+        padding: 3rem 4rem 0.5rem 5rem;
+        max-width: 28rem;
         font-family: $ff-sections;
         font-weight: $fw-sections;
         font-size: larger;
-        max-width: 35rem;
+
+            .section1__text--title{
+                font-weight: $fw-title;
+            }
+
+            .section1__linkbutton{
+            background-color: #000000;
+            color: white;
+            padding: 0.5rem 3.5rem;
+            margin-top: 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 30px;
+            }
+
+            .section1__linkbutton:hover{
+                background-color: rgb(255, 255, 255);
+                color: #000000;
+            }
+        }
+
+        .section1__carousel{
+            padding: 1rem;
+            padding-left: 12rem;
+            max-width: 53rem;
+            height: auto;
+        }
+    }
+    /*----------------SECTION 2----------------*/
+    #section2{
+        grid-area: section2;
+        background-color: $bc-sections;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .section2__img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .section2__text{
+            font-family: $ff-sections;
+            font-weight: $fw-sections;
+            padding-left: 10px;
+            font-size: larger;
+            max-width: 35rem;
 
 
             .section2__text--title{
@@ -155,62 +174,66 @@ header{
                 padding-bottom: 2rem;
             }
 
-        .section2__linkbutton{
-            background-color: #000000;
-            color: white;
-            padding: 0.5rem 3.5rem;
-            margin-top: 2rem;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 30px;
-            }
+            .section2__linkbutton{
+                background-color: #000000;
+                color: white;
+                padding: 0.5rem 3.5rem;
+                margin-top: 2rem;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 30px;
+                }
     
             .section2__linkbutton:hover{
                 background-color: rgb(255, 255, 255);
                 color: #000000;
             }
         }
-}
+    }
+    /*----------------SECTION 3----------------*/
+    #section3{
+        grid-area: section3;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 35px;
 
-/*----------------SECTION 3----------------*/
+        .section3__text{
+            font-family: $ff-sections;
+            font-weight: $fw-sections;
+            font-size: larger;
+            text-align: right;
+            max-width: 320px;
 
-.section3{
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 35px;
+            .section3__text--title{
+                font-weight: $fw-title;
+            }
 
-    .section3__text{
-        font-family: $ff-sections;
-        font-weight: $fw-sections;
-        font-size: larger;
-        text-align: right;
-        max-width: 320px;
-
-        .section3__text--title{
-            font-weight: $fw-title;
-        }
-
-        .section3__linkbutton{
-            background-color: #000000;
-            color: white;
-            padding: 0.5rem 3.5rem;
-            margin-top: 2rem;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 30px;
-        }
+            .section3__linkbutton{
+                background-color: #000000;
+                color: white;
+                padding: 0.5rem 3.5rem;
+                margin-top: 2rem;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 30px;
+            }
     
             .section3__linkbutton:hover{
                 background-color: rgb(255, 255, 255);
                 color: #000000;
+            }    
+        }
+        .section3__img{
+            max-width: 100%;
+            height: auto;
         }
     }
 }
-
 /*--------------------------------------------------------PRODUCTOS--------------------------------------------------------*/
 
 .aside-filtros{
@@ -312,7 +335,7 @@ main{
             align-items: center;
 
 
-            .conteiner__overlay{
+            .caja__overlay{
                 position: relative;
                 padding: 20px;
             }
@@ -335,12 +358,12 @@ main{
                 transition: .6s ease;
             }
             
-            .conteiner__overlay:hover .overlay{
+            .caja__overlay:hover .overlay{
                 bottom: 0;
                 height: 100%;
             }
             
-            .conteiner__overlay--text{
+            .caja__overlay--text{
                 white-space: nowrap; 
                 color: rgb(0, 0, 0);
                 font-size: 15px;
@@ -359,24 +382,24 @@ main{
 /*----------------SECTOR 1----------------*/
 
 
-.conteiner__aboutus{
+.section1__aboutus{
     display: flex;
     flex-direction: row;
     padding: 10rem 10rem 1rem 10rem;
 
-    .conteiner__aboutus--font{
+    .section1__aboutus--font{
         font-weight: 900;
         font-family: 'Zen Old Mincho', serif;
         font-size: xx-large;
         padding-top: 1rem;     
     }
 
-    .conteiner__aboutus--text{
+    .section1__aboutus--text{
         padding: 1rem 10rem 0rem 10rem;
     }
 }
 
-.conteiner__numbers{
+.section1__numbers{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -384,19 +407,19 @@ main{
     font-family: $ff-sections;
     font-size: $fs-numbers/2;
 
-    .conteiner__numbers--font{
+    .section1__numbers--font{
         font-family: 'Zen Old Mincho', serif;
         font-size: $fs-numbers*2;
     }
-    .conteiner__año{
+    .section1__año{
         padding: $pd-numbers;
         text-align: center;
     }
-    .conteiner__productos{
+    .section1__productos{
         padding: $pd-numbers;
         text-align: center;
     }
-    .conteiner__empleados{
+    .section1__empleados{
         padding: $pd-numbers;
         text-align: center;
     }
@@ -408,10 +431,6 @@ main{
 
 .formulario{
     padding: 40px 40px 40px 40px;
-
-    .mb-3-mt-3{
-        padding-bottom: 30px;
-    }
 
     .form-floating{
         padding-bottom: 2rem;
@@ -466,5 +485,16 @@ footer{
 
     .redes-pagos{
         text-align: center;
+        .bloque-redes__logos{
+            width: 6rem;
+            height: auto;
+        }
+        .bloque-pago__logos{
+            width: 6rem;
+            height: auto;
+        }
+        .bloque-pago__logos--tamaño{
+            width: 4rem;
+        }
     }
 }

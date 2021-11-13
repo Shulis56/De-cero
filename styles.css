@@ -86,32 +86,50 @@ header nav .linav a:link {
   padding: 2em 2em 600px 2em;
 }
 
-/*----------------SECTION 1----------------*/
-.section1 {
+/*--------------------------------------------------------INDEX--------------------------------------------------------*/
+#conteiner-index-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: 30rem 30rem 30rem;
+      grid-template-rows: 30rem 30rem 30rem;
+  grid-gap: 1rem;
+      grid-template-areas: "section1 section1"  "section2 section2"  "section3 section3";
+  /*----------------SECTION 1----------------*/
+  /*----------------SECTION 2----------------*/
+  /*----------------SECTION 3----------------*/
+}
+
+#conteiner-index-grid #section1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: section1;
   background-color: white;
   max-height: 30rem;
-  padding-bottom: 35rem;
+  padding-bottom: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.section1 .section1__text {
-  padding: 3rem 4rem 1rem 5rem;
+#conteiner-index-grid #section1 .section1__text {
+  padding: 3rem 4rem 0.5rem 5rem;
   max-width: 28rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: larger;
 }
 
-.section1 .section1__text .section1__text--title {
+#conteiner-index-grid #section1 .section1__text .section1__text--title {
   font-weight: 900;
 }
 
-.section1 .section1__text .section1__linkbutton {
+#conteiner-index-grid #section1 .section1__text .section1__linkbutton {
   background-color: #000000;
   color: white;
   padding: 0.5rem 3.5rem;
@@ -122,23 +140,29 @@ header nav .linav a:link {
   border-radius: 30px;
 }
 
-.section1 .section1__text .section1__linkbutton:hover {
+#conteiner-index-grid #section1 .section1__text .section1__linkbutton:hover {
   background-color: white;
   color: #000000;
 }
 
-.section1 .section1__carousel {
+#conteiner-index-grid #section1 .section1__carousel {
   padding: 1rem;
   padding-left: 12rem;
   max-width: 53rem;
+  height: auto;
 }
 
-/*----------------SECTION 2----------------*/
-.section2 {
+#conteiner-index-grid #section2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: section2;
   background-color: #fff6fb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -146,19 +170,25 @@ header nav .linav a:link {
           align-items: center;
 }
 
-.section2 .section2__text {
+#conteiner-index-grid #section2 .section2__img {
+  max-width: 100%;
+  height: auto;
+}
+
+#conteiner-index-grid #section2 .section2__text {
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  padding-left: 10px;
   font-size: larger;
   max-width: 35rem;
 }
 
-.section2 .section2__text .section2__text--title {
+#conteiner-index-grid #section2 .section2__text .section2__text--title {
   font-weight: 900;
   padding-bottom: 2rem;
 }
 
-.section2 .section2__text .section2__linkbutton {
+#conteiner-index-grid #section2 .section2__text .section2__linkbutton {
   background-color: #000000;
   color: white;
   padding: 0.5rem 3.5rem;
@@ -169,17 +199,22 @@ header nav .linav a:link {
   border-radius: 30px;
 }
 
-.section2 .section2__text .section2__linkbutton:hover {
+#conteiner-index-grid #section2 .section2__text .section2__linkbutton:hover {
   background-color: white;
   color: #000000;
 }
 
-/*----------------SECTION 3----------------*/
-.section3 {
+#conteiner-index-grid #section3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: section3;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -188,7 +223,7 @@ header nav .linav a:link {
   padding-bottom: 35px;
 }
 
-.section3 .section3__text {
+#conteiner-index-grid #section3 .section3__text {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: larger;
@@ -196,11 +231,11 @@ header nav .linav a:link {
   max-width: 320px;
 }
 
-.section3 .section3__text .section3__text--title {
+#conteiner-index-grid #section3 .section3__text .section3__text--title {
   font-weight: 900;
 }
 
-.section3 .section3__text .section3__linkbutton {
+#conteiner-index-grid #section3 .section3__text .section3__linkbutton {
   background-color: #000000;
   color: white;
   padding: 0.5rem 3.5rem;
@@ -211,9 +246,14 @@ header nav .linav a:link {
   border-radius: 30px;
 }
 
-.section3 .section3__text .section3__linkbutton:hover {
+#conteiner-index-grid #section3 .section3__text .section3__linkbutton:hover {
   background-color: white;
   color: #000000;
+}
+
+#conteiner-index-grid #section3 .section3__img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------PRODUCTOS--------------------------------------------------------*/
@@ -339,7 +379,7 @@ main .intr-img {
           align-items: center;
 }
 
-main .intr-img .conteiner__overlay {
+main .intr-img .caja__overlay {
   position: relative;
   padding: 20px;
 }
@@ -363,12 +403,12 @@ main .intr-img .overlay {
   transition: .6s ease;
 }
 
-main .intr-img .conteiner__overlay:hover .overlay {
+main .intr-img .caja__overlay:hover .overlay {
   bottom: 0;
   height: 100%;
 }
 
-main .intr-img .conteiner__overlay--text {
+main .intr-img .caja__overlay--text {
   white-space: nowrap;
   color: black;
   font-size: 15px;
@@ -384,7 +424,7 @@ main .intr-img .conteiner__overlay--text {
 }
 
 /*----------------SECTOR 1----------------*/
-.conteiner__aboutus {
+.section1__aboutus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,18 +435,18 @@ main .intr-img .conteiner__overlay--text {
   padding: 10rem 10rem 1rem 10rem;
 }
 
-.conteiner__aboutus .conteiner__aboutus--font {
+.section1__aboutus .section1__aboutus--font {
   font-weight: 900;
   font-family: 'Zen Old Mincho', serif;
   font-size: xx-large;
   padding-top: 1rem;
 }
 
-.conteiner__aboutus .conteiner__aboutus--text {
+.section1__aboutus .section1__aboutus--text {
   padding: 1rem 10rem 0rem 10rem;
 }
 
-.conteiner__numbers {
+.section1__numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,22 +464,22 @@ main .intr-img .conteiner__overlay--text {
   font-size: 20px;
 }
 
-.conteiner__numbers .conteiner__numbers--font {
+.section1__numbers .section1__numbers--font {
   font-family: 'Zen Old Mincho', serif;
   font-size: 80px;
 }
 
-.conteiner__numbers .conteiner__año {
+.section1__numbers .section1__año {
   padding: 4rem;
   text-align: center;
 }
 
-.conteiner__numbers .conteiner__productos {
+.section1__numbers .section1__productos {
   padding: 4rem;
   text-align: center;
 }
 
-.conteiner__numbers .conteiner__empleados {
+.section1__numbers .section1__empleados {
   padding: 4rem;
   text-align: center;
 }
@@ -447,10 +487,6 @@ main .intr-img .conteiner__overlay--text {
 /*--------------------------------------------------------AYUDA--------------------------------------------------------*/
 .formulario {
   padding: 40px 40px 40px 40px;
-}
-
-.formulario .mb-3-mt-3 {
-  padding-bottom: 30px;
 }
 
 .formulario .form-floating {
@@ -512,5 +548,19 @@ footer .ayuda .ulfooter {
 
 footer .redes-pagos {
   text-align: center;
+}
+
+footer .redes-pagos .bloque-redes__logos {
+  width: 6rem;
+  height: auto;
+}
+
+footer .redes-pagos .bloque-pago__logos {
+  width: 6rem;
+  height: auto;
+}
+
+footer .redes-pagos .bloque-pago__logos--tamaño {
+  width: 4rem;
 }
 /*# sourceMappingURL=styles.css.map */
