@@ -38,33 +38,38 @@ header{
     background-image: url(img/header.png);
     background-repeat: no-repeat;
     padding: $pd-header;
+    nav{    
+        .navweb{
+            background-color: $bc-nav;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1%;
+            border-radius: 15px;
+            font-family: $ff-nav;
+        
+            .linav{
+                display: inline;
+                padding: $pd-linav;
+                font-size: 23px;
 
-    nav{
-        background-color: $bc-nav;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1%;
-        border-radius: 15px;
-        font-family: $ff-nav;
-
-        .linav{
-            display: inline;
-            padding: $pd-linav;
-            font-size: 23px;
-
-            a:visited{
-                color: black;
-                outline: none;
-                text-decoration: none;
-            }
-            a:link{
-                text-decoration: none;
+                a:visited{
+                    color: black;
+                    outline: none;
+                    text-decoration: none;
+                }
+                a:link{
+                    text-decoration: none;
+                }
             }
         }
     }
+    .navmobile{
+        display: none;
+    }
 }
+
 
 #headerProductos{
     background-image: url(img/header2.png);
@@ -148,6 +153,7 @@ header{
         }
     }
     /*----------------SECTION 2----------------*/
+
     #section2{
         grid-area: section2;
         background-color: $bc-sections;
@@ -191,7 +197,9 @@ header{
             }
         }
     }
+
     /*----------------SECTION 3----------------*/
+
     #section3{
         grid-area: section3;
         background-color: white;
@@ -498,3 +506,443 @@ footer{
         }
     }
 }
+
+/*------------------------MEDIA QUERIES-------------------------*/
+
+@media (max-width:768px) {
+
+    /*----------------NAVEGADOR 768px----------------*/
+
+    header{
+        background-image: none;
+        background-repeat: no-repeat;
+        padding: 0rem;
+        background-color: $ff-sections;
+
+        nav{
+            background-color: $bc-sections;
+            padding: 2rem;
+            .navweb{
+                display: none;
+                }
+            .navmobile{
+                display: flex;
+            }
+        }
+    }
+
+    #headerProductos{
+        background-image: none;
+        background-color: $bc-sections;
+        padding: 0rem;
+    }
+    
+    #headerRutinas{
+        background-image: none;
+        background-color: $bc-sections;
+        padding: 0rem;
+    }
+    #headerDermatos{
+        background-image: none;
+        background-color: $bc-sections;
+        padding: 0rem;
+    }
+    
+    #headerAyuda{
+        background-image: none;
+        background-color: $bc-sections;
+        padding: 0rem;
+    }
+
+/*-------------------------INDEX 768px--------------------*/
+
+
+    #conteiner-index-grid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 30rem 30rem 30rem;
+        grid-gap: 1rem;
+        grid-template-areas:"section1" 
+                            "section2" 
+                            "section3";
+    
+        /*----------------SECTION 1 768px----------------*/
+    
+        #section1{
+            grid-area: section1;
+            background-color: rgb(255, 255, 255);
+            max-height: 30rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+    
+            .section1__text{
+            padding: 3rem 4rem 0.5rem 5rem;
+            max-width: 28rem;
+            font-family: $ff-sections;
+            font-weight: $fw-sections;
+            font-size: larger;
+            text-align: center;
+    
+                .section1__text--title{
+                    font-weight: $fw-title;
+                }
+    
+                .section1__linkbutton{
+                background-color: #000000;
+                color: white;
+                padding: 0.5rem 3.5rem;
+                margin-top: 2rem;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 30px;
+                }
+    
+                .section1__linkbutton:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: #000000;
+                }
+            }
+    
+            .section1__carousel{
+                display: none;
+            }
+        }
+        /*----------------SECTION 768px----------------*/
+        #section2{
+            grid-area: section2;
+            background-color: $bc-sections;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+    
+            .section2__img{
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .section2__text{
+                font-family: $ff-sections;
+                font-weight: $fw-sections;
+                font-size: larger;
+                max-width: 18rem;
+    
+    
+                .section2__text--title{
+                    font-weight: $fw-title;
+                    padding-bottom: 2rem;
+                }
+    
+                .section2__linkbutton{
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 0.5rem 3.5rem;
+                    margin-top: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 30px;
+                    }
+        
+                .section2__linkbutton:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: #000000;
+                }
+            }
+        }
+        /*----------------SECTION 3 768px----------------*/
+        #section3{
+            grid-area: section3;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 35px;
+    
+            .section3__text{
+                font-family: $ff-sections;
+                font-weight: $fw-sections;
+                font-size: larger;
+                text-align: right;
+                max-width: 320px;
+                text-align: center;
+    
+                .section3__text--title{
+                    font-weight: $fw-title;
+                }
+    
+                .section3__linkbutton{
+                    background-color: #000000;
+                    color: white;
+                    padding: 0.5rem 3.5rem;
+                    margin-top: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 30px;
+                }
+        
+                .section3__linkbutton:hover{
+                    background-color: rgb(255, 255, 255);
+                    color: #000000;
+                }    
+            }
+            .section3__img{
+                display: none;
+            }
+        }
+    }
+
+/*----------------FOOTER 768px----------------*/
+
+
+footer{
+    background-image: none;
+    background-color: $bc-sections;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    .encontranos{
+        text-align: center;
+        line-height: 3.4;
+
+        .encontranos__p1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            display: inline;
+        }
+        .encontranos__p2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+    }
+
+    .ayuda{
+        text-align: center;
+        .ulfooter{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        line-height: 3;
+        list-style: none;
+        }
+    }
+
+    .redes-pagos{
+        text-align: center;
+        .bloque-redes{
+            padding-bottom: 30px;
+        }
+        .bloque-redes__logos{
+            width: 3rem;
+            height: auto;
+        }
+        .bloque-pago__logos{
+            width: 3rem;
+            height: auto;
+        }
+        .bloque-pago__logos--tamaño{
+            width: 2rem;
+        }
+    }
+}
+
+/*--------------------------------------------------------PRODUCTOS 768px--------------------------------------------------------*/
+
+.aside-filtros{
+    display: none;
+}
+
+/*--------------------------------------------------------RUTINAS 786px--------------------------------------------------------*/
+
+.rutinas{
+    justify-content: space-around;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .encabezado{
+        padding: $pd-rutinas;
+        text-align: center;
+        .encabezado__title{
+            font-size: medium;
+        }
+        .encabezado__text{
+            font-size: medium;
+        }
+    }
+    .piel-grasa{
+        padding: $pd-rutinas;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+        background-color: $bc-rutinas;
+        flex-wrap: wrap;
+        .divimg__grasa{
+            max-width: 25rem;
+        }
+        .piel-grasa__text{
+            padding: 3rem;
+        }
+    }
+    .piel-seca{
+        padding: $pd-rutinas;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: $bc-rutinas;
+        .piel-seca__text{
+            padding: 3rem;
+        }
+    }
+    .piel-mixta{
+        padding: $pd-rutinas;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: $bc-rutinas;
+        .piel-mixta__text{
+            padding: 3rem;
+        }
+    }
+}
+
+
+
+
+
+
+/*--------------------------------------------------------DERMATOS 768px--------------------------------------------------------*/
+
+/*----------------MAIN----------------*/
+
+main{
+    text-align: center;
+    font-family: $ff-sections;
+    background-image: linear-gradient(white, rgba(133, 60, 125, 0.354), white);
+
+    .introduction{
+        padding: 30px;
+
+            .dermatos__text--title{
+                font-family: $ff-sections;
+                font-weight: $fw-sections;
+                padding: 2rem;
+                font-size: large;
+            }
+            .dermatos__text--p{
+                font-size: medium;
+                padding: 2rem;
+
+            }
+        }
+
+        .intr-img{
+            display: flex;
+            align-items: center;
+
+
+            .caja__overlay{
+                position: relative;
+                padding: 20px;
+            }
+            
+            .img__overlay{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .overlay{
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                right: 0;
+                background-color: #ffffff88;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .6s ease;
+            }
+            
+            .caja__overlay:hover .overlay{
+                bottom: 0;
+                height: 100%;
+            }
+            
+            .caja__overlay--text{
+                white-space: nowrap; 
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                font-family: $fw-sections;
+                font-weight: $fw-title;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+/*----------------SECTOR 1----------------*/
+
+
+.section1__aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 4rem;
+
+    .section1__aboutus--font{
+        font-weight: 900;
+        font-family: 'Zen Old Mincho', serif;
+        font-size: large;
+        padding-top: 1rem;     
+        text-align: center;
+    }
+
+    .section1__aboutus--text{
+        padding: 2rem;
+    }
+}
+
+.section1__numbers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: $ff-sections;
+    font-size: $fs-numbers/2;
+
+    .section1__numbers--font{
+        font-family: 'Zen Old Mincho', serif;
+        font-size: $fs-numbers;
+    }
+    .section1__año{
+        padding: 2rem;
+        text-align: center;
+    }
+    .section1__productos{
+        padding: 4rem;
+        text-align: center;
+    }
+    .section1__empleados{
+        padding: 2rem;
+        text-align: center;
+    }
+}
+
+
+
+
+}
+

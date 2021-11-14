@@ -23,23 +23,41 @@
 </head>
 <body>
     <header id="headerRutinas">
-        <!---------------NAVEGADOR--------------->
-        <nav>
-            <img src="../img/logo.png" alt="logo de dérmatos" class="logo">
-            <ul class="nav__ul">
-                <li class="linav"> <a href="../index.html">Inicio</a></li>
-                <li class="linav"> <a href="../menunavegable/productos.html">Productos</a></li>
-                <li class="linav"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
-                <li class="linav"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
-                <li class="linav"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
-            </ul>
-        </nav>
+            <!---------------NAVEGADOR--------------->
+            <nav>
+                <div class="navweb">
+                <img src="../img/logo.png" alt="logo de dérmatos" class="logo">
+                <ul class="nav__ul">
+                    <li class="linav"> <a href="../index.html">Inicio</a></li>
+                    <li class="linav"> <a href="../menunavegable/productos.html">Productos</a></li>
+                    <li class="linav"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
+                    <li class="linav"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
+                    <li class="linav"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
+                </ul>
+                </div>
+                <!-------Navegador mobile------>
+                <div class="navmobile">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menú
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li class="linav"> <a href="../index.html">Inicio</a></li>
+                            <li class="linav"> <a href="../menunavegable/productos.html">Productos</a></li>
+                            <li class="linav"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
+                            <li class="linav"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
+                            <li class="linav"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </nav>
     </header>
 
     <!---------------RUTINAS--------------->
 
-<div class="conteiner-rutinas">
-    <div class="rutinas row">
+<div class="container-fluid rutinas">
+    <div class="row">
         <!---------------ENCABEZADO--------------->
         <section class="encabezado col-8">
             <h2 class="encabezado__title">EL MEJOR CUIDADO DEPENDE DE TU TIPO DE PIEL</h2>
@@ -50,8 +68,8 @@
         </section>
         <!---------------PIEL GRASA--------------->
         <section class="piel-grasa col-12 shadow p-3 mb-5 bg-body rounded">
-            <div class="cara1">
-                <img src="../img/cara1.png" alt="Rostro de mujer con crema en la nariz">
+            <div class="divimg">
+                <img src="../img/cara1.png" alt="Rostro de mujer con crema en la nariz" class="divimg__grasa">
             </div>
             <div class="piel-grasa__text">
                 <h3 class="piel-grasa__text--title">Tipo 1: Piel Grasa</h3>
@@ -68,8 +86,8 @@
         </section>
         <!---------------PIEL SECA--------------->
         <section class="piel-seca col-12 shadow p-3 mb-5 bg-body rounded">
-            <div class="cara2">
-                <img src="../img/cara2.png" alt="rostro de mujer pasandose toalla desmaquillante">
+            <div class="divimg">
+                <img src="../img/cara2.png" alt="rostro de mujer pasandose toalla desmaquillante" class="divimg__seca">
             </div>
             <div class="piel-seca__text">
                 <h3 class="piel-seca__text--title">Tipo 1: Piel Seca</h3>
@@ -87,8 +105,8 @@
         </section>
         <!---------------PIEL MIXTA--------------->
         <section class="piel-mixta col-12 shadow p-3 mb-5 bg-body rounded">
-            <div class="cara2">
-                <img src="../img/cara3.PNG" alt="rostro de mujer aplicandose producto">
+            <div class="divimg">
+                <img src="../img/cara3.PNG" alt="rostro de mujer aplicandose producto" class="divimg__mixta">
             </div>
             <div class="piel-mixta__text">
                 <h3 class="piel-mixta__text--title">Tipo 1: Piel Mixta</h3>

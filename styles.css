@@ -27,7 +27,7 @@ header {
   padding: 2em 2em 600px 2em;
 }
 
-header nav {
+header nav .navweb {
   background-color: rgba(255, 255, 255, 0.794);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,20 +46,24 @@ header nav {
   font-family: "Questrial", sans-serif;
 }
 
-header nav .linav {
+header nav .navweb .linav {
   display: inline;
   padding: 1em 3em 1em 3em;
   font-size: 23px;
 }
 
-header nav .linav a:visited {
+header nav .navweb .linav a:visited {
   color: black;
   outline: none;
   text-decoration: none;
 }
 
-header nav .linav a:link {
+header nav .navweb .linav a:link {
   text-decoration: none;
+}
+
+header .navmobile {
+  display: none;
 }
 
 #headerProductos {
@@ -562,5 +566,454 @@ footer .redes-pagos .bloque-pago__logos {
 
 footer .redes-pagos .bloque-pago__logos--tamaño {
   width: 4rem;
+}
+
+/*------------------------MEDIA QUERIES-------------------------*/
+@media (max-width: 768px) {
+  /*----------------NAVEGADOR 768px----------------*/
+  header {
+    background-image: none;
+    background-repeat: no-repeat;
+    padding: 0rem;
+    background-color: "Lato", sans-serif;
+  }
+  header nav {
+    background-color: #fff6fb;
+    padding: 2rem;
+  }
+  header nav .navweb {
+    display: none;
+  }
+  header nav .navmobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #headerProductos {
+    background-image: none;
+    background-color: #fff6fb;
+    padding: 0rem;
+  }
+  #headerRutinas {
+    background-image: none;
+    background-color: #fff6fb;
+    padding: 0rem;
+  }
+  #headerDermatos {
+    background-image: none;
+    background-color: #fff6fb;
+    padding: 0rem;
+  }
+  #headerAyuda {
+    background-image: none;
+    background-color: #fff6fb;
+    padding: 0rem;
+  }
+  /*-------------------------INDEX 768px--------------------*/
+  #conteiner-index-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 30rem 30rem 30rem;
+        grid-template-rows: 30rem 30rem 30rem;
+    grid-gap: 1rem;
+        grid-template-areas: "section1"  "section2"  "section3";
+    /*----------------SECTION 1 768px----------------*/
+    /*----------------SECTION 768px----------------*/
+    /*----------------SECTION 3 768px----------------*/
+  }
+  #conteiner-index-grid #section1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: section1;
+    background-color: white;
+    max-height: 30rem;
+    padding-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #conteiner-index-grid #section1 .section1__text {
+    padding: 3rem 4rem 0.5rem 5rem;
+    max-width: 28rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+  }
+  #conteiner-index-grid #section1 .section1__text .section1__text--title {
+    font-weight: 900;
+  }
+  #conteiner-index-grid #section1 .section1__text .section1__linkbutton {
+    background-color: #000000;
+    color: white;
+    padding: 0.5rem 3.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+  }
+  #conteiner-index-grid #section1 .section1__text .section1__linkbutton:hover {
+    background-color: white;
+    color: #000000;
+  }
+  #conteiner-index-grid #section1 .section1__carousel {
+    display: none;
+  }
+  #conteiner-index-grid #section2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: section2;
+    background-color: #fff6fb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #conteiner-index-grid #section2 .section2__img {
+    max-width: 100%;
+    height: auto;
+  }
+  #conteiner-index-grid #section2 .section2__text {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    max-width: 18rem;
+  }
+  #conteiner-index-grid #section2 .section2__text .section2__text--title {
+    font-weight: 900;
+    padding-bottom: 2rem;
+  }
+  #conteiner-index-grid #section2 .section2__text .section2__linkbutton {
+    background-color: #000000;
+    color: white;
+    padding: 0.5rem 3.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+  }
+  #conteiner-index-grid #section2 .section2__text .section2__linkbutton:hover {
+    background-color: white;
+    color: #000000;
+  }
+  #conteiner-index-grid #section3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: section3;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 35px;
+  }
+  #conteiner-index-grid #section3 .section3__text {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    text-align: right;
+    max-width: 320px;
+    text-align: center;
+  }
+  #conteiner-index-grid #section3 .section3__text .section3__text--title {
+    font-weight: 900;
+  }
+  #conteiner-index-grid #section3 .section3__text .section3__linkbutton {
+    background-color: #000000;
+    color: white;
+    padding: 0.5rem 3.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+  }
+  #conteiner-index-grid #section3 .section3__text .section3__linkbutton:hover {
+    background-color: white;
+    color: #000000;
+  }
+  #conteiner-index-grid #section3 .section3__img {
+    display: none;
+  }
+  /*----------------FOOTER 768px----------------*/
+  footer {
+    background-image: none;
+    background-color: #fff6fb;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .encontranos {
+    text-align: center;
+    line-height: 3.4;
+  }
+  footer .encontranos .encontranos__p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    display: inline;
+  }
+  footer .encontranos .encontranos__p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+  }
+  footer .ayuda {
+    text-align: center;
+  }
+  footer .ayuda .ulfooter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 3;
+    list-style: none;
+  }
+  footer .redes-pagos {
+    text-align: center;
+  }
+  footer .redes-pagos .bloque-redes {
+    padding-bottom: 30px;
+  }
+  footer .redes-pagos .bloque-redes__logos {
+    width: 3rem;
+    height: auto;
+  }
+  footer .redes-pagos .bloque-pago__logos {
+    width: 3rem;
+    height: auto;
+  }
+  footer .redes-pagos .bloque-pago__logos--tamaño {
+    width: 2rem;
+  }
+  /*--------------------------------------------------------PRODUCTOS 768px--------------------------------------------------------*/
+  .aside-filtros {
+    display: none;
+  }
+  /*--------------------------------------------------------RUTINAS 786px--------------------------------------------------------*/
+  .rutinas {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rutinas .encabezado {
+    padding: 2rem 3rem 2rem 3rem;
+    text-align: center;
+  }
+  .rutinas .encabezado .encabezado__title {
+    font-size: medium;
+  }
+  .rutinas .encabezado .encabezado__text {
+    font-size: medium;
+  }
+  .rutinas .piel-grasa {
+    padding: 2rem 3rem 2rem 3rem;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fff8f1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rutinas .piel-grasa .divimg__grasa {
+    max-width: 25rem;
+  }
+  .rutinas .piel-grasa .piel-grasa__text {
+    padding: 3rem;
+  }
+  .rutinas .piel-seca {
+    padding: 2rem 3rem 2rem 3rem;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fff8f1;
+  }
+  .rutinas .piel-seca .piel-seca__text {
+    padding: 3rem;
+  }
+  .rutinas .piel-mixta {
+    padding: 2rem 3rem 2rem 3rem;
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fff8f1;
+  }
+  .rutinas .piel-mixta .piel-mixta__text {
+    padding: 3rem;
+  }
+  /*--------------------------------------------------------DERMATOS 768px--------------------------------------------------------*/
+  /*----------------MAIN----------------*/
+  main {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(133, 60, 125, 0.354)), to(white));
+    background-image: linear-gradient(white, rgba(133, 60, 125, 0.354), white);
+  }
+  main .introduction {
+    padding: 30px;
+  }
+  main .introduction .dermatos__text--title {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    padding: 2rem;
+    font-size: large;
+  }
+  main .introduction .dermatos__text--p {
+    font-size: medium;
+    padding: 2rem;
+  }
+  main .intr-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .intr-img .caja__overlay {
+    position: relative;
+    padding: 20px;
+  }
+  main .intr-img .img__overlay {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  main .intr-img .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff88;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    -webkit-transition: .6s ease;
+    transition: .6s ease;
+  }
+  main .intr-img .caja__overlay:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  main .intr-img .caja__overlay--text {
+    white-space: nowrap;
+    color: black;
+    font-size: 15px;
+    font-family: 700;
+    font-weight: 900;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  /*----------------SECTOR 1----------------*/
+  .section1__aboutus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 4rem;
+  }
+  .section1__aboutus .section1__aboutus--font {
+    font-weight: 900;
+    font-family: 'Zen Old Mincho', serif;
+    font-size: large;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .section1__aboutus .section1__aboutus--text {
+    padding: 2rem;
+  }
+  .section1__numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+  .section1__numbers .section1__numbers--font {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 40px;
+  }
+  .section1__numbers .section1__año {
+    padding: 2rem;
+    text-align: center;
+  }
+  .section1__numbers .section1__productos {
+    padding: 4rem;
+    text-align: center;
+  }
+  .section1__numbers .section1__empleados {
+    padding: 2rem;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
