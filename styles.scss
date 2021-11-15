@@ -287,6 +287,9 @@ header{
     .encabezado{
         padding: $pd-rutinas;
         text-align: center;
+        .encabezado__title{
+            font-size: larger;
+        }
     }
     .piel-grasa{
         padding: $pd-rutinas;

@@ -308,6 +308,10 @@ header .navmobile {
   text-align: center;
 }
 
+.rutinas .encabezado .encabezado__title {
+  font-size: larger;
+}
+
 .rutinas .piel-grasa {
   padding: 2rem 3rem 2rem 3rem;
   margin-bottom: 3rem;
