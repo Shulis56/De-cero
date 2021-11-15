@@ -48,21 +48,29 @@ header{
             padding: 1%;
             border-radius: 15px;
             font-family: $ff-nav;
-        
-            .linav{
-                display: inline;
-                padding: $pd-linav;
-                font-size: 23px;
 
-                a:visited{
-                    color: black;
-                    outline: none;
-                    text-decoration: none;
+            .nav__ul{
+                margin-bottom: 0;
+
+                .linav{
+                    display: inline;
+                    padding: $pd-linav;
+                    font-size: 23px;
+    
+                    a:visited{
+                        color: black;
+                        outline: none;
+                        text-decoration: none;
+                    }
+                    a:link{
+                        text-decoration: none;
+                    }
                 }
-                a:link{
-                    text-decoration: none;
+                .linav:hover{
+                    background-color: rgba(255, 255, 255, 0.287);
+                    border-radius: 10px;
                 }
-            }
+            }                    
         }
     }
     .navmobile{
@@ -140,7 +148,7 @@ header{
             }
 
             .section1__linkbutton:hover{
-                background-color: rgb(255, 255, 255);
+                background-color: $bc-sections;
                 color: #000000;
             }
         }
@@ -232,7 +240,7 @@ header{
             }
     
             .section3__linkbutton:hover{
-                background-color: rgb(255, 255, 255);
+                background-color: $bc-sections;
                 color: #000000;
             }    
         }
@@ -245,9 +253,10 @@ header{
 /*--------------------------------------------------------PRODUCTOS--------------------------------------------------------*/
 
 .aside-filtros{
-    padding: 2rem 2rem 70rem 2rem;
+    padding: 2rem 2rem 60rem 2rem;
     margin-left: 3rem;
     margin-top: 6rem;
+    margin-bottom: 8rem;
     border-style: solid;
     border-color: rgb(190, 190, 190);
     border-width: 1px;
@@ -403,7 +412,16 @@ main{
     }
 
     .section1__aboutus--text{
-        padding: 1rem 10rem 0rem 10rem;
+        padding: 4rem 10rem 0rem 10rem;
+        font-family: $ff-sections;
+        font-size: larger;
+        text-align: center;
+        line-height: 2;
+        .section1__aboutus--sentence{
+            color: coral;
+            font-size: xx-large
+        }
+
     }
 }
 

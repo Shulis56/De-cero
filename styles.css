@@ -46,20 +46,29 @@ header nav .navweb {
   font-family: "Questrial", sans-serif;
 }
 
-header nav .navweb .linav {
+header nav .navweb .nav__ul {
+  margin-bottom: 0;
+}
+
+header nav .navweb .nav__ul .linav {
   display: inline;
   padding: 1em 3em 1em 3em;
   font-size: 23px;
 }
 
-header nav .navweb .linav a:visited {
+header nav .navweb .nav__ul .linav a:visited {
   color: black;
   outline: none;
   text-decoration: none;
 }
 
-header nav .navweb .linav a:link {
+header nav .navweb .nav__ul .linav a:link {
   text-decoration: none;
+}
+
+header nav .navweb .nav__ul .linav:hover {
+  background-color: rgba(255, 255, 255, 0.287);
+  border-radius: 10px;
 }
 
 header .navmobile {
@@ -145,7 +154,7 @@ header .navmobile {
 }
 
 #conteiner-index-grid #section1 .section1__text .section1__linkbutton:hover {
-  background-color: white;
+  background-color: #fff6fb;
   color: #000000;
 }
 
@@ -251,7 +260,7 @@ header .navmobile {
 }
 
 #conteiner-index-grid #section3 .section3__text .section3__linkbutton:hover {
-  background-color: white;
+  background-color: #fff6fb;
   color: #000000;
 }
 
@@ -262,9 +271,10 @@ header .navmobile {
 
 /*--------------------------------------------------------PRODUCTOS--------------------------------------------------------*/
 .aside-filtros {
-  padding: 2rem 2rem 70rem 2rem;
+  padding: 2rem 2rem 60rem 2rem;
   margin-left: 3rem;
   margin-top: 6rem;
+  margin-bottom: 8rem;
   border-style: solid;
   border-color: #bebebe;
   border-width: 1px;
@@ -447,7 +457,16 @@ main .intr-img .caja__overlay--text {
 }
 
 .section1__aboutus .section1__aboutus--text {
-  padding: 1rem 10rem 0rem 10rem;
+  padding: 4rem 10rem 0rem 10rem;
+  font-family: "Lato", sans-serif;
+  font-size: larger;
+  text-align: center;
+  line-height: 2;
+}
+
+.section1__aboutus .section1__aboutus--text .section1__aboutus--sentence {
+  color: coral;
+  font-size: xx-large;
 }
 
 .section1__numbers {
