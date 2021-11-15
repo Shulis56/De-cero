@@ -18,22 +18,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;900&display=swap" rel="stylesheet">
-
-
 </head>
+
+
 <body>
     <header id="headerProductos">
-        <!---------------NAVEGADOR--------------->
+        <!--------------------NAVEGADOR-------------------->
         <nav>
             <div class="navweb">
-            <img src="../img/logo.png" alt="logo de dérmatos" class="logo">
-            <ul class="nav__ul">
-                <li class="linav"> <a href="../index.html">Inicio</a></li>
-                <li class="linav"> <a href="../menunavegable/productos.html">Productos</a></li>
-                <li class="linav"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
-                <li class="linav"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
-                <li class="linav"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
-            </ul>
+                <img src="../img/logo.png" alt="logo de dérmatos" class="logo">
+                <ul class="nav__ul">
+                    <li class="nav__ul--li"> <a href="../index.html">Inicio</a></li>
+                    <li class="nav__ul--li"> <a href="../menunavegable/productos.html">Productos</a></li>
+                    <li class="nav__ul--li"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
+                    <li class="nav__ul--li"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
+                    <li class="nav__ul--li"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
+                </ul>
             </div>
             <!-------Navegador mobile------>
             <div class="navmobile">
@@ -43,33 +43,33 @@
                         Menú
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li class="linav"> <a href="../index.html">Inicio</a></li>
-                        <li class="linav"> <a href="../menunavegable/productos.html">Productos</a></li>
-                        <li class="linav"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
-                        <li class="linav"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
-                        <li class="linav"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
+                        <li class="nav__ul--li"> <a href="../index.html">Inicio</a></li>
+                        <li class="nav__ul--li"> <a href="../menunavegable/productos.html">Productos</a></li>
+                        <li class="nav__ul--li"> <a href="../menunavegable/rutinas.html">Elegí tu rutina</a></li>
+                        <li class="nav__ul--li"> <a href="../menunavegable/dermatos.html">Sobre Dérmatos</a></li>
+                        <li class="nav__ul--li"> <a href="../menunavegable/ayuda.html">Ayuda</a></li>
                     </ul>
                 </div>
-            </div>
-        
+            </div>        
         </nav>
     </header>
-
+    <!--conteiner bootstrap-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-3">
+                <!--------------------ASIDE-------------------->
                 <aside>
                     <div class="aside-filtros">
                         <form>
                             <div class="categorias">
-                                <div class="categorias__checkboxs"><label for="checkbox" class="enc_categorias">Categoría</label></div>
+                                <div class="categorias__checkboxs"><label for="checkbox" class="categorias__checkboxs--encabezado">Categoría</label></div>
                                 <div class="categorias__checkboxs"><input type="checkbox" id="checkbox" name="cbox1"> Rostro</div>
                                 <div class="categorias__checkboxs"><input type="checkbox" id="checkbox" name="cbox2"> Cuerpo</div>
                                 <div class="categorias__checkboxs"><input type="checkbox" id="checkbox" name="cbox3"> Manos y pies</div>
                             </div>
                             <hr>
                             <div class="categorias">
-                                <div class="categorias__checkboxs"><label for="checkbox" class="enc_categorias">Función</label></div>
+                                <div class="categorias__checkboxs"><label for="checkbox" class="categorias__checkboxs--encabezado">Función</label></div>
                                 <div class="categorias__checkboxs"><input type="checkbox" id="checkbox" name="cbox4"> Hidratar</div>
                                 <div class="categorias__checkboxs"><input type="checkbox" id="checkbox" name="cbox5"> Protector</div>
                                 <div class="categorias__checkboxs"><input type="checkbox" id="checkbox" name="cbox6"> Nutrición</div>
@@ -81,220 +81,187 @@
                 </aside>
             </div>
             <div class="col-9">
-                <!-- Section-->
+                <!--------------------CARDS PRODUCTOS-------------------->
                 <section class="py-5">
                     <div class="container px-4 px-lg-5 mt-5">
                         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+                            <!-----1° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto1.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto -->
+                                    <img class="card-img-top" src="../img/producto1.jpg" alt="Balsamo labial" />
+                                    <!-- detalles producto -->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Bálsamo labial</h5>
-                                            <!-- Product price-->
+                                            <!-- precio producto-->
                                             $600
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----2° card----->
                             <div class="col mb-5">
                                 <div class="card h-100 ">
-                                    <!-- Sale badge-->
+                                    <!-- sale -->
                                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto3.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto-->
+                                    <img class="card-img-top" src="../img/producto3.jpg" alt="Sérum humectante" />
+                                    <!-- detalles producto-->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto-->
                                             <h5 class="fw-bolder">Sérum humectante</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             <span class="text-muted text-decoration-line-through">$1500</span>
                                             $1000
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----3° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Sale badge-->
+                                    <!-- sale-->
                                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto2.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto -->
+                                    <img class="card-img-top" src="../img/producto2.jpg" alt="Labial hidratante" />
+                                    <!-- deatlles producto -->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Labial hidratante</h5>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             <span class="text-muted text-decoration-line-through">$560</span>
                                             $420
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----4° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto4.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto -->
+                                    <img class="card-img-top" src="../img/producto4.jpg" alt="Sérum antiage" />
+                                    <!-- detalles producto -->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Sérum antiage</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             $2600
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----5° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Sale badge-->
+                                    <!-- sale -->
                                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto5.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto -->
+                                    <img class="card-img-top" src="../img/producto5.jpg" alt="Crema nutritiva" />
+                                    <!-- detalles producto -->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Crema nutritiva</h5>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             <span class="text-muted text-decoration-line-through">$3000</span>
                                             $2300
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----6° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto6.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto -->
+                                    <img class="card-img-top" src="../img/producto6.jpg" alt="Crema restructurante"/>
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Crema restructurante</h5>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             $3700
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----7° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Sale badge-->
+                                    <!-- sale -->
                                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto7.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto-->
+                                    <img class="card-img-top" src="../img/producto7.jpg" alt="Exfoliante" />
+                                    <!-- detalles producto -->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Exfoliante</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
+                                            <!-- precio producto-->
                                             <span class="text-muted text-decoration-line-through">$1800</span>
                                             $1500
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----8° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto9.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto -->
+                                    <img class="card-img-top" src="../img/producto9.jpg" alt="Protector solar nude" />
+                                    <!-- detalles producto -->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Protector solar nude</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             $4000
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                     </div>
                                 </div>
                             </div>
+                            <!-----9° card----->
                             <div class="col mb-5">
                                 <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="../img/producto1.jpg" alt="..." />
-                                    <!-- Product details-->
+                                    <!-- imagen producto-->
+                                    <img class="card-img-top" src="../img/producto1.jpg" alt="Bálsamo labial" />
+                                    <!-- detalles producto-->
                                     <div class="card-body p-4">
                                         <div class="text-center">
-                                            <!-- Product name-->
+                                            <!-- nombre producto -->
                                             <h5 class="fw-bolder">Bálsamo labial</h5>
-                                            <!-- Product price-->
+                                            <!-- precio producto -->
                                             $600
                                         </div>
                                     </div>
-                                    <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                                     </div>
@@ -303,6 +270,7 @@
                         </div>
                     </div>
                 </section>
+            </div>
         </div>
     </div>
 
@@ -311,7 +279,7 @@
             <div class="encontranos">
                     <h4>Encontranos</h4>
                     <p class="encontranos__p1">
-                        <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" width="35" alt="sobre"> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" width="35" alt="icono sobre"> 
                     Dermatos_oficial@gmail.com
                     </p>
                     <p class="encontranos__p2">
