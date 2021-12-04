@@ -23,8 +23,9 @@ a {
 /*----------------NAVEGADOR----------------*/
 header {
   background-image: url(img/header.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 2em 2em 600px 2em;
+  padding: 2em 2em 40em 2em;
 }
 
 header nav .navweb {
@@ -75,28 +76,28 @@ header .navmobile {
   display: none;
 }
 
-#headerProductos {
+#header_productos {
   background-image: url(img/header2.png);
   background-repeat: no-repeat;
-  padding: 2em 2em 600px 2em;
+  padding: 2em 2em 40em 2em;
 }
 
-#headerRutinas {
+#header_rutinas {
   background-image: url(img/header3.png);
   background-repeat: no-repeat;
-  padding: 2em 2em 600px 2em;
+  padding: 2em 2em 40em 2em;
 }
 
-#headerDermatos {
+#header_dermatos {
   background-image: url(img/header4.png);
   background-repeat: no-repeat;
-  padding: 2em 2em 600px 2em;
+  padding: 2em 2em 40em 2em;
 }
 
-#headerAyuda {
+#header_ayuda {
   background-image: url(img/header5.png);
   background-repeat: no-repeat;
-  padding: 2em 2em 600px 2em;
+  padding: 2em 2em 40em 2em;
 }
 
 /*--------------------------------------------------------INDEX--------------------------------------------------------*/
@@ -306,10 +307,16 @@ header .navmobile {
 .rutinas .encabezado {
   padding: 2rem 3rem 2rem 3rem;
   text-align: center;
+  font-size: larger;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .rutinas .encabezado .encabezado__title {
-  font-size: larger;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: pink;
 }
 
 .rutinas .piel-grasa {
@@ -592,13 +599,13 @@ footer .redes-pagos .bloque-pago__logos--tamaño {
 }
 
 /*------------------------MEDIA QUERIES-------------------------*/
-@media (max-width: 768px) {
-  /*----------------NAVEGADOR 768px----------------*/
+@media (max-width: 769px) {
+  /*----------------NAVEGADOR 576px-768px----------------*/
   header {
     background-image: none;
     background-repeat: no-repeat;
     padding: 0rem;
-    background-color: "Lato", sans-serif;
+    background-color: #fff6fb;
   }
   header nav {
     background-color: #fff6fb;
@@ -635,7 +642,7 @@ footer .redes-pagos .bloque-pago__logos--tamaño {
     background-color: #fff6fb;
     padding: 0rem;
   }
-  /*-------------------------INDEX 768px--------------------*/
+  /*-------------------------INDEX 576px-768px--------------------*/
   #conteiner-index-grid {
     display: -ms-grid;
     display: grid;
@@ -645,9 +652,9 @@ footer .redes-pagos .bloque-pago__logos--tamaño {
         grid-template-rows: 30rem 30rem 30rem;
     grid-gap: 1rem;
         grid-template-areas: "section1"  "section2"  "section3";
-    /*----------------SECTION 1 768px----------------*/
-    /*----------------SECTION 768px----------------*/
-    /*----------------SECTION 3 768px----------------*/
+    /*----------------SECTION 1 576px-768px----------------*/
+    /*----------------SECTION 576px-768px----------------*/
+    /*----------------SECTION 3 576px-768px----------------*/
   }
   #conteiner-index-grid #section1 {
     -ms-grid-row: 1;
@@ -782,7 +789,7 @@ footer .redes-pagos .bloque-pago__logos--tamaño {
   #conteiner-index-grid #section3 .section3__img {
     display: none;
   }
-  /*----------------FOOTER 768px----------------*/
+  /*----------------FOOTER 576px-768px----------------*/
   footer {
     background-image: none;
     background-color: #fff6fb;
@@ -836,11 +843,11 @@ footer .redes-pagos .bloque-pago__logos--tamaño {
   footer .redes-pagos .bloque-pago__logos--tamaño {
     width: 2rem;
   }
-  /*--------------------------------------------------------PRODUCTOS 768px--------------------------------------------------------*/
+  /*--------------------------------------------------------PRODUCTOS 576px-768px--------------------------------------------------------*/
   .aside-filtros {
     display: none;
   }
-  /*--------------------------------------------------------RUTINAS 786px--------------------------------------------------------*/
+  /*--------------------------------------------------------RUTINAS 576px-768px--------------------------------------------------------*/
   .rutinas {
     -ms-flex-pack: distribute;
         justify-content: space-around;

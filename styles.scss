@@ -2,7 +2,7 @@
 $bc-sections: rgb(255, 246, 251);
 $bc-rutinas: rgb(255, 248, 241);
 $bc-nav: rgba(255, 255, 255, 0.794);
-$pd-header: 2em 2em 600px 2em;
+$pd-header: 2em 2em 40em 2em;
 $pd-linav: 1em 3em 1em 3em;
 $ff-nav: 'Questrial', sans-serif;
 $ff-sections: 'Lato', sans-serif;
@@ -36,6 +36,7 @@ a{
 
 header{
     background-image: url(img/header.png);
+    background-size: cover;
     background-repeat: no-repeat;
     padding: $pd-header;
     nav{    
@@ -79,24 +80,24 @@ header{
 }
 
 
-#headerProductos{
+#header_productos{
     background-image: url(img/header2.png);
     background-repeat: no-repeat;
     padding: $pd-header;
 }
 
-#headerRutinas{
+#header_rutinas{
     background-image: url(img/header3.png);
     background-repeat: no-repeat;
     padding: $pd-header
 }
-#headerDermatos{
+#header_dermatos{
     background-image: url(img/header4.png);
     background-repeat: no-repeat;
     padding: $pd-header;
 }
 
-#headerAyuda{
+#header_ayuda{
     background-image: url(img/header5.png);
     background-repeat: no-repeat;
     padding: $pd-header;
@@ -287,8 +288,14 @@ header{
     .encabezado{
         padding: $pd-rutinas;
         text-align: center;
+        font-size: larger;
+        font-family: $ff-sections;
+        font-weight: 400;
         .encabezado__title{
-            font-size: larger;
+            font-family: $ff-sections;
+            font-weight: 900;
+            font-size: xx-large;
+            color: pink;
         }
     }
     .piel-grasa{
@@ -530,15 +537,15 @@ footer{
 
 /*------------------------MEDIA QUERIES-------------------------*/
 
-@media (max-width:768px) {
+@media (max-width:769px) {
 
-    /*----------------NAVEGADOR 768px----------------*/
+    /*----------------NAVEGADOR 576px-768px----------------*/
 
     header{
         background-image: none;
         background-repeat: no-repeat;
         padding: 0rem;
-        background-color: $ff-sections;
+        background-color: $bc-sections;
 
         nav{
             background-color: $bc-sections;
@@ -576,7 +583,7 @@ footer{
         padding: 0rem;
     }
 
-/*-------------------------INDEX 768px--------------------*/
+/*-------------------------INDEX 576px-768px--------------------*/
 
 
     #conteiner-index-grid{
@@ -588,7 +595,7 @@ footer{
                             "section2" 
                             "section3";
     
-        /*----------------SECTION 1 768px----------------*/
+        /*----------------SECTION 1 576px-768px----------------*/
     
         #section1{
             grid-area: section1;
@@ -631,7 +638,7 @@ footer{
                 display: none;
             }
         }
-        /*----------------SECTION 768px----------------*/
+        /*----------------SECTION 576px-768px----------------*/
         #section2{
             grid-area: section2;
             background-color: $bc-sections;
@@ -674,7 +681,7 @@ footer{
                 }
             }
         }
-        /*----------------SECTION 3 768px----------------*/
+        /*----------------SECTION 3 576px-768px----------------*/
         #section3{
             grid-area: section3;
             background-color: white;
@@ -718,7 +725,7 @@ footer{
         }
     }
 
-/*----------------FOOTER 768px----------------*/
+/*----------------FOOTER 576px-768px----------------*/
 
 
 footer{
@@ -773,13 +780,13 @@ footer{
     }
 }
 
-/*--------------------------------------------------------PRODUCTOS 768px--------------------------------------------------------*/
+/*--------------------------------------------------------PRODUCTOS 576px-768px--------------------------------------------------------*/
 
 .aside-filtros{
     display: none;
 }
 
-/*--------------------------------------------------------RUTINAS 786px--------------------------------------------------------*/
+/*--------------------------------------------------------RUTINAS 576px-768px--------------------------------------------------------*/
 
 .rutinas{
     justify-content: space-around;
@@ -962,9 +969,5 @@ main{
         text-align: center;
     }
 }
-
-
-
-
 }
 
