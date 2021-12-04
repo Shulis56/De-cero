@@ -585,17 +585,17 @@ footer .redes-pagos {
 }
 
 footer .redes-pagos .bloque-redes__logos {
-  width: 6rem;
+  width: 4rem;
   height: auto;
 }
 
 footer .redes-pagos .bloque-pago__logos {
-  width: 6rem;
+  width: 4rem;
   height: auto;
 }
 
 footer .redes-pagos .bloque-pago__logos--tamaño {
-  width: 4rem;
+  width: 2rem;
 }
 
 /*------------------------MEDIA QUERIES-------------------------*/
